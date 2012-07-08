@@ -1,0 +1,19 @@
+#include <bits/byteswap.h> /* __bwap_{16,32} */
+
+/*
+  Basically, does:
+uint32_t swap_uint32 ( uint32_t num )
+{
+	return  ( (num>>24) & 0x000000ff) |    // move byte 3 to byte 0
+		( (num<<8)  & 0x00ff0000) |   // move byte 1 to byte 2
+		( (num>>8)  & 0x0000ff00) |     // move byte 2 to byte 1
+		( (num<<24) & 0xff000000); // byte 0 to byte 3
+}
+
+uint16_t swap_uint16 ( uint16_t num )
+{
+	//          Move UP and mask    | Move DOWN and mask
+	return( (num<<8) & 0xff00 ) | ( (num>>8) & 0x00ff ); 
+}
+*/
+
