@@ -1,0 +1,9 @@
+To compile a simple test-tool that reads current configuration from a device,
+and nothing more, run build-read-tool.sh. This is a shell-script, not a 
+Makefile, simply because QT qmake will overwrite any Makefile in the directory.
+
+To build the QT GUI tool, use your installed QT to do:
+
+  qmake Configurator.pro && make
+
+This code is, as far as QT licensing permits, public domain code.
