@@ -7,5 +7,3 @@ do
 done
 
 gcc read_hm-trp.o hm-trp.o serial.o -o read_hm-trp
-gcc set_speed.o hm-trp.o serial.o -o set_speed
-
